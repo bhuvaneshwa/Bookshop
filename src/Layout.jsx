@@ -20,7 +20,7 @@ export default function Layout() {
               aria-label="Back to homepage"
               className="flex items-center p-2"
             >
-              ss
+              <img src="/Logo-V9.svg" alt="" className="h-10 w-24 rounded-full"/>
             </a>
           </div>
           <div className="items-center flex-shrink-0 hidden lg:flex">
@@ -113,7 +113,9 @@ export default function Layout() {
           </div>
           <div className="items-center mx-2 gap-3 flex-shrink-0 hidden lg:flex">
             {/* Profile Button */}
-            <button className="px-4 py-2 font-semibold dark:bg-white rounded-full dark:text-black">
+
+            <Link to="/register"> Login</Link>
+            <button  className="px-4 py-2 font-semibold dark:bg-white rounded-full dark:text-black">
               <FaUser className="w-6 h-6" />
             </button>
             {/* Shopping Cart Button */}

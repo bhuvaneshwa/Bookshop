@@ -8,6 +8,8 @@ import Contact from "./pages/Contact";
 import Footer from "./Footer";
 import Tracking from "./pages/Tracking";
 import Blog from "./pages/Blog";
+import RegisterForm from "./RegisterForm";
+import Login from "./Login";
 
 
 
@@ -24,6 +26,8 @@ export default function App() {
             <Route path="/contact" element={<Contact/>} />
             <Route path="/track" element={<Tracking/>} />
             <Route path="/blog" element={<Blog/>} />
+            <Route  path="/register" element={<RegisterForm/>}/>
+            <Route  path="/register/login" element={<Login/>}/>
           </Route>
         </Routes>
 

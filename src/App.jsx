@@ -13,6 +13,8 @@ import Login from "./Login";
 
 
 
+
+
 export default function App() {
   return (
     <Router>
@@ -27,7 +29,10 @@ export default function App() {
             <Route path="/track" element={<Tracking/>} />
             <Route path="/blog" element={<Blog/>} />
             <Route  path="/register" element={<RegisterForm/>}/>
+            {/* <Route  path="/loginsignup" element={<LoginSignup/>}/> */}
             <Route  path="/register/login" element={<Login/>}/>
+
+          
           </Route>
         </Routes>
 

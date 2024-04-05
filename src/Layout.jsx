@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
-import { FaUser, FaShoppingCart } from "react-icons/fa";
+import {  FaShoppingCart } from "react-icons/fa";
 
 export default function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,14 +14,17 @@ export default function Layout() {
       <header className="dark:bg-[#606c38] dark:text-white">
         <div className="container flex justify-between h-16 mx-auto">
           <div className="flex items-center">
-            <a
-              rel="noopener noreferrer"
-              href="#"
+            <Link
+             to="/"
               aria-label="Back to homepage"
               className="flex items-center p-2"
             >
-              <img src="/Logo-V9.svg" alt="" className="h-10 w-24 rounded-full"/>
-            </a>
+              <img
+                src="/Logo-V9.svg"
+                alt=""
+                className="h-10 w-24 rounded-full"
+              />
+            </Link>
           </div>
           <div className="items-center flex-shrink-0 hidden lg:flex">
             {/* Navigation Links */}
@@ -69,8 +72,8 @@ export default function Layout() {
                         General Books
                       </a>
                     </li>
-                    
-					<li>
+
+                    <li>
                       <a
                         href="#"
                         className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
@@ -79,8 +82,7 @@ export default function Layout() {
                       </a>
                     </li>
 
-
-					<li>
+                    <li>
                       <a
                         href="#"
                         className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200"
@@ -114,10 +116,15 @@ export default function Layout() {
           <div className="items-center mx-2 gap-3 flex-shrink-0 hidden lg:flex">
             {/* Profile Button */}
 
-            <Link to="/register"> Login</Link>
-            <button  className="px-4 py-2 font-semibold dark:bg-white rounded-full dark:text-black">
+            <Link to="/register/login">
+              <button className="bg-white text-black px-4 py-2 rounded-sm">Login</button>{" "}
+            </Link>
+            <Link to="/register">
+              <button className="bg-white text-black px-4 py-2 rounded-sm">Sign up</button>
+            </Link>
+            {/* <button to className="px-4 py-2 font-semibold dark:bg-white rounded-full dark:text-black">
               <FaUser className="w-6 h-6" />
-            </button>
+            </button> */}
             {/* Shopping Cart Button */}
             <button className="px-4 py-2 font-semibold rounded dark:bg-white dark:text-black">
               <FaShoppingCart className="w-6 h-6" />

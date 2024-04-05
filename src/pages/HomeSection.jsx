@@ -1,4 +1,8 @@
+import General from "./Books/General";
+import Newbooks from "./Books/Newbooks";
+import Permium from "./Books/Permium";
 import Membership from "./Membership";
+import SecondBanner from "./SecondBanner";
 // import Slideshow from "./Slideshow";
 
 const HomeSection = () => {
@@ -13,7 +17,7 @@ const HomeSection = () => {
           <div className="w-full md:w-1/2 p-5">
             <div className="content flex flex-col justify-center items-center">
               <h3 className="text-4xl font-bold text-black">
-                Books Feed Your Soul
+                Books Feed Your Soulsss
               </h3>
               <p className="text-base text-gray-700 leading-relaxed my-4 text-center">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
@@ -36,13 +40,22 @@ const HomeSection = () => {
           </div>
         </div>
       </section>
+
+
+      <SecondBanner/>
+
+      <div className="m-10">
+
+     <General/>
+      <Permium/>
+      <Newbooks/>
+     </div>
+      
       <section className="dark:bg-gray-100 dark:text-gray-800" id="reviews">
         <div className="container px-6 py-12 mx-auto">
           <div className="grid items-center gap-4 xl:grid-cols-5">
             <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
-              <h2 className="text-4xl font-bold">
-                Duo assum utroque appetere an
-              </h2>
+              <h2 className="text-4xl font-bold">What People Say?</h2>
               <p className="dark:text-gray-600">
                 Pri ex magna scaevola moderatius. Nullam accommodare no vix, est
                 ei diceret alienum, et sit cetero malorum. Et sea iudico
@@ -152,6 +165,9 @@ const HomeSection = () => {
           </div>
         </div>
       </section>
+
+
+     
 
       <Membership />
     </div>

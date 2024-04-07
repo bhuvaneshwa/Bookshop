@@ -1,38 +1,49 @@
-import React from "react";
-
-// Card component
-function Card({ title, description }) {
-  return (
-    <div className="bg-white p-4 mb-4 rounded shadow">
-      <h2 className="text-lg font-bold mb-2">{title}</h2>
-      <p className="text-sm">{description}</p>
-    </div>
-  );
-}
-
+import { Link } from "react-router-dom";
 export default function General() {
   return (
-    <div className="flex flex-wrap  justify-between">
- <div className="flex justify-between items-center mb-4">
-      <h1 className="">General Books</h1>
-      <h1 className="underline">View all</h1>
-    </div>
-      {/* Card 1 */}
-      <Card title="Card 1 Title" description="Description of Card 1." />
+    <div>
+      <div className="grid grid-rows-2">
+        <div className="flex flex-row justify-between">
+          <h1>Premium books</h1>
+          <Link to="/premium-books" className="underline">View all</Link>
+        </div>
+        <div className="bg-gray-700 flex flex-wrap" style={{ marginTop: '-10px' }}> {/* Adjust the margin */}
+          {/* Here goes the content of your premium books */}
+          <div className="bg-red-800 p-4 m-2">
+            {/* Card content */}
+            <h2>Title 1</h2>
+            <p>Description of the book 1</p>
+          </div>
+          <div className="bg-red-800 p-4 m-2">
+            {/* Card content */}
+            <h2>Title 2</h2>
+            <p>Description of the book 2</p>
+          </div>
+          <div className="bg-red-800 p-4 m-2">
+            {/* Card content */}
+            <h2>Title 3</h2>
+            <p>Description of the book 3</p>
+          </div>
+          <div className="bg-red-800 p-4 m-2">
+            {/* Card content */}
+            <h2>Title 4</h2>
+            <p>Description of the book 4</p>
+          </div>
+          <div className="bg-red-800 p-4 m-2">
+            {/* Card content */}
+            <h2>Title 5</h2>
+            <p>Description of the book 5</p>
+          </div>
 
-      {/* Card 2 */}
-      <Card title="Card 2 Title" description="Description of Card 2." />
+          <div className="bg-red-800 p-4 m-2">
+            {/* Card content */}
+            <h2>Title 5</h2>
+            <p>Description of the book 5</p>
+          </div>
 
-      {/* Card 3 */}
-      <Card title="Card 3 Title" description="Description of Card 3." />
-
-      <Card title="Card 3 Title" description="Description of Card 3." />
-
-      <Card title="Card 3 Title" description="Description of Card 3." />
-
-     
-
-      {/* Add more cards as needed */}
+          
+        </div>
+      </div>
     </div>
   );
 }

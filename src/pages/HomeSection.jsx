@@ -41,16 +41,14 @@ const HomeSection = () => {
         </div>
       </section>
 
-
-      <SecondBanner/>
+      <SecondBanner />
 
       <div className="m-10">
+        <General />
+        <Permium />
+        <Newbooks />
+      </div>
 
-     <General/>
-      <Permium/>
-      <Newbooks/>
-     </div>
-      
       <section className="dark:bg-gray-100 dark:text-gray-800" id="reviews">
         <div className="container px-6 py-12 mx-auto">
           <div className="grid items-center gap-4 xl:grid-cols-5">
@@ -165,9 +163,6 @@ const HomeSection = () => {
           </div>
         </div>
       </section>
-
-
-     
 
       <Membership />
     </div>

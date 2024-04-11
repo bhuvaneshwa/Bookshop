@@ -1,6 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
-import {  FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function Layout() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Layout() {
         <div className="container flex justify-between h-16 mx-auto">
           <div className="flex items-center">
             <Link
-             to="/"
+              to="/"
               aria-label="Back to homepage"
               className="flex items-center p-2"
             >
@@ -50,9 +50,8 @@ export default function Layout() {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    className={`w-4 h-4 ml-1 transition-transform duration-300 transform ${
-                      isMenuOpen ? "rotate-180" : ""
-                    }`}
+                    className={`w-4 h-4 ml-1 transition-transform duration-300 transform ${isMenuOpen ? "rotate-180" : ""
+                      }`}
                   >
                     <path
                       strokeLinecap="round"

@@ -10,7 +10,7 @@ export default function General() {
         </button></Link>
       </div>
       <div className="container mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5 -mr-32">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
 
 
           <div data-aos="fade-up" data-aos-delay="0" className="space-y-3 aos-init aos-animate ">

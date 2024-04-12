@@ -10,9 +10,14 @@ import Tracking from "./pages/Tracking";
 import Blog from "./pages/Blog";
 import RegisterForm from "./RegisterForm";
 import Login from "./Login";
+<<<<<<< HEAD
 import Navbar from "./navbar";
+=======
+import Premiumbooks from "./pages/Books/Viewsbook/Premiumbooks";
+>>>>>>> origin/master
 
-
+import Dashboard from "./components/Dashboard/Dashboard"
+import Dashboards from "./components/Dashboard/Admins/Dashboards";
 
 
 
@@ -34,6 +39,19 @@ export default function App() {
             <Route path="/register/login" element={<Login />} />
 
 
+<<<<<<< HEAD
+=======
+            <Route path="/premiumbooks" element={<Premiumbooks/>}/>
+
+
+
+
+            <Route path="/register/login/dashboard" element={<Dashboard/>}/>
+
+            <Route path="/register/login/dashboard" element={<Dashboards/>}/>
+
+          
+>>>>>>> origin/master
           </Route>
         </Routes>
         <Footer />

@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import General from "./Books/General";
 import Newbooks from "./Books/Newbooks";
 import Permium from "./Books/Permium";
 import Membership from "./Membership";
 import SecondBanner from "./SecondBanner";
+import Testimonial from "./Testimonial";
 
 const HomeSection = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
@@ -25,13 +26,20 @@ const HomeSection = () => {
   return (
     <div>
       <section
+<<<<<<< HEAD
         className="pt-20 bg-cover bg-gray-200 bg-center h-[30rem] relative transition duration-1000 mt-24"
+=======
+        className="pt-20 m-5  bg-cover h-[25rem] relative transition duration-1000"
+>>>>>>> origin/master
         style={{
           backgroundImage: backgrounds[backgroundIndex],
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
           transitionProperty: "background-image",
         }}
         id="home"
       >
+<<<<<<< HEAD
         <div className="container mx-auto flex flex-col md:flex-row items-center h-full">
           <div className="w-full md:w-1/2 p-5">
             <div className="content flex flex-col justify-center items-center bg-transparent p-5 rounded-xl">
@@ -57,6 +65,10 @@ const HomeSection = () => {
             {/* For example, you can add an image */}
             <img src="/blog3.jpg" alt="Hero Image" className="w-full " />
           </div>
+=======
+        <div className="text-5xl pt-0 pl-28 flex  h-[15rem]">
+          <h1>Welcome</h1>
+>>>>>>> origin/master
         </div>
       </section>
 
@@ -68,120 +80,7 @@ const HomeSection = () => {
         <Newbooks />
       </div>
 
-      <section className="dark:bg-gray-100 dark:text-gray-800" id="reviews">
-        <div className="container px-6 py-12 mx-auto">
-          <div className="grid items-center gap-4 xl:grid-cols-5">
-            <div className="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left">
-              <h2 className="text-4xl font-bold">What People Say?</h2>
-              <p className="dark:text-gray-600">
-                Pri ex magna scaevola moderatius. Nullam accommodare no vix, est
-                ei diceret alienum, et sit cetero malorum. Et sea iudico
-                consequat, est sanctus adipisci ex.
-              </p>
-            </div>
-            <div className="p-6 xl:col-span-3">
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="grid content-center gap-4">
-                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                    <p>
-                      An audire commodo habemus cum. Ne sed corrumpit
-                      repudiandae. Tota aliquip democritum pro in, nec
-                      democritum intellegam ne. Propriae volutpat dissentiet ea
-                      sit, nec at lorem inani tritani, an ius populo perfecto
-                      vituperatoribus. Eu cum case modus salutandi, ut eum
-                      vocent sensibus reprehendunt.
-                    </p>
-                    <div className="flex items-center mt-4 space-x-4">
-                      <img
-                        src="https://source.unsplash.com/50x50/?portrait?1"
-                        alt=""
-                        className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
-                      />
-                      <div>
-                        <p className="text-lg font-semibold">Leroy Jenkins</p>
-                        <p className="text-sm dark:text-gray-600">
-                          CTO of Company Co.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                    <p>
-                      Sit wisi sapientem ut, pri civibus temporibus voluptatibus
-                      et, ius cu hinc fabulas. Nam meliore minimum et, regione
-                      convenire cum id. Ex pro eros mucius consectetuer, pro
-                      magna nulla nonumy ne, eam putent iudicabit consulatu cu.
-                    </p>
-                    <div className="flex items-center mt-4 space-x-4">
-                      <img
-                        src="https://source.unsplash.com/50x50/?portrait?2"
-                        alt=""
-                        className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
-                      />
-                      <div>
-                        <p className="text-lg font-semibold">Leroy Jenkins</p>
-                        <p className="text-sm dark:text-gray-600">
-                          CTO of Company Co.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="grid content-center gap-4">
-                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                    <p>
-                      Putant omnium elaboraret per ut. Id dicta tritani nominavi
-                      quo, mea id justo errem elaboraret. Agam mollis scripserit
-                      ea his, ut nec postea verear persecuti. Ea noster senserit
-                      eam, ferri omittantur ei nec. Id mel solet libris
-                      efficiantur, commune explicari et eos. Case movet ad est,
-                      sed tota vocent appetere ea.
-                    </p>
-                    <div className="flex items-center mt-4 space-x-4">
-                      <img
-                        src="https://source.unsplash.com/50x50/?portrait?3"
-                        alt=""
-                        className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
-                      />
-                      <div>
-                        <p className="text-lg font-semibold">Leroy Jenkins</p>
-                        <p className="text-sm dark:text-gray-600">
-                          CTO of Company Co.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6 rounded shadow-md dark:bg-gray-50">
-                    <p>
-                      Te omnes virtute volutpat sed. Ei esse eros interesset
-                      vel, ei populo denique ocurreret vix, eu cum pertinax
-                      mandamus vituperatoribus. Solum nihil luptatum per ex, ei
-                      amet viderer eos. Ea illum labitur mnesarchum pro. Eius
-                      meis salutandi ei nam, alterum expetenda et nec. Expetenda
-                      intellegat at eum, per mazim sanctus honestatis ad. Ei
-                      noluisse invenire vix. Te ancillae patrioque qui, probo
-                      bonorum vivendum ex vim.
-                    </p>
-                    <div className="flex items-center mt-4 space-x-4">
-                      <img
-                        src="https://source.unsplash.com/50x50/?portrait?4"
-                        alt=""
-                        className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500"
-                      />
-                      <div>
-                        <p className="text-lg font-semibold">Leroy Jenkins</p>
-                        <p className="text-sm dark:text-gray-600">
-                          CTO of Company Co.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Testimonial/>
 
       <Membership />
     </div>

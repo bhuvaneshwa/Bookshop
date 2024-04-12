@@ -10,6 +10,7 @@ import Tracking from "./pages/Tracking";
 import Blog from "./pages/Blog";
 import RegisterForm from "./RegisterForm";
 import Login from "./Login";
+import Navbar from "./navbar";
 
 
 
@@ -22,22 +23,20 @@ export default function App() {
         <BannerOne />
         <BannerSecond />
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Navbar />}>
             <Route index element={<HomeSection />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact/>} />
-            <Route path="/track" element={<Tracking/>} />
-            <Route path="/blog" element={<Blog/>} />
-            <Route  path="/register" element={<RegisterForm/>}/>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/track" element={<Tracking />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/register" element={<RegisterForm />} />
             {/* <Route  path="/loginsignup" element={<LoginSignup/>}/> */}
-            <Route  path="/register/login" element={<Login/>}/>
+            <Route path="/register/login" element={<Login />} />
 
-          
+
           </Route>
         </Routes>
-
-
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );

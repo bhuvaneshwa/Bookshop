@@ -25,7 +25,7 @@ const HomeSection = () => {
   return (
     <div>
       <section
-        className="pt-20 bg-cover bg-gray-200 bg-center h-[30rem] relative transition duration-1000"
+        className="pt-20 bg-cover bg-gray-200 bg-center h-[30rem] relative transition duration-1000 mt-24"
         style={{
           backgroundImage: backgrounds[backgroundIndex],
           transitionProperty: "background-image",
@@ -34,7 +34,7 @@ const HomeSection = () => {
       >
         <div className="container mx-auto flex flex-col md:flex-row items-center h-full">
           <div className="w-full md:w-1/2 p-5">
-            <div className="content flex flex-col justify-center items-center bg-slate-50 p-5 rounded-xl">
+            <div className="content flex flex-col justify-center items-center bg-transparent p-5 rounded-xl">
               <h3 className="text-4xl font-bold text-black">
                 Books Feed Your Soulsss
               </h3>
@@ -46,7 +46,7 @@ const HomeSection = () => {
               </p>
               <a
                 href="#populer"
-                className="btn bg-[#606c38] text-white py-2 px-6 rounded-full text-lg font-semibold transition duration-300 hover:bg-secondaryColor hover:text-white"
+                className="btn bg-[#007bff] hover:text-black hover:bg-white text-white py-2 px-6 rounded-full text-lg font-semibold transition duration-300 hover:bg-secondaryColor"
               >
                 Shop Now !
               </a>

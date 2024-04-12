@@ -9,19 +9,19 @@ export default function BannerSecond() {
           <div>
             <ul className="flex sm:text-sm">
               <li className="cursor-pointer transition duration-300 ease-in-out  mx-4 transform hover:scale-105">
-                <Link to="/track" className="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:underline bg-gray-200 hover:bg-gray-300 rounded-md">Track Order</Link>
+                <Link to="/track" className="block px-4 py-2 text-gray-700 hover:text-blue-400  hover:font-bold text-[15px] rounded-md">Track Order</Link>
               </li>
               <li className="cursor-pointer transition duration-300 ease-in-out mx-4 transform hover:scale-105">
-                <Link to="/about" className="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:underline bg-gray-200 hover:bg-gray-300 rounded-md">About Us</Link>
+                <Link to="/about" className="block px-4 py-2 text-gray-700  hover:text-blue-400  hover:font-bold text-[15px] rounded-md">About Us</Link>
               </li>
               <li className="cursor-pointer transition duration-300 ease-in-out  mx-4 transform hover:scale-105">
-                <Link to="/blog" className="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:underline bg-gray-200 hover:bg-gray-300 rounded-md">Blog</Link>
+                <Link to="/blog" className="block px-4 py-2 text-gray-700  hover:text-blue-400  hover:font-bold text-[15px] rounded-md">Blog</Link>
               </li>
               <li className="cursor-pointer transition duration-300 ease-in-out mx-4 transform hover:scale-105">
-                <Link to="/contact" className="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:underline bg-gray-200 hover:bg-gray-300 rounded-md">Contact Us</Link>
+                <Link to="/contact" className="block px-4 py-2 text-gray-700  hover:text-blue-400  hover:font-bold text-[15px] rounded-md">Contact Us</Link>
               </li>
               <li className="cursor-pointer transition duration-300 ease-in-out mx-4 transform hover:scale-105">
-                <Link to="/about" className="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:underline bg-gray-200 hover:bg-gray-300 rounded-md">FAQ</Link>
+                <Link to="/about" className="block px-4 py-2 text-gray-700  hover:text-blue-400  hover:font-bold text-[15px] rounded-md">FAQ</Link>
               </li>
             </ul>
           </div>
@@ -33,6 +33,7 @@ export default function BannerSecond() {
           </div>
         </div>
       </div>
+      <hr className=' border-blue-400'></hr>
     </div>
   );
 }

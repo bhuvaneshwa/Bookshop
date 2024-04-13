@@ -11,7 +11,7 @@ export default function Layout() {
 
   return (
     <div>
-      <header className="dark:bg-[#606c38] dark:text-white">
+      <header className="dark:bg-white dark:text-black">
         <div className="container flex justify-between h-16 mx-auto">
           <div className="flex items-center">
             <Link
@@ -94,20 +94,20 @@ export default function Layout() {
                 )}
               </li>
               <li className="flex">
-                <a
+                <Link to="/membership"
                 
                   className="flex items-center px-4 -mb-1"
                 >
                   Membership
-                </a>
+                </Link>
               </li>
               <li className="flex" href="#reviews">
-                <a
+                <Link to="/testimonial"
                  
                   className="flex items-center px-4 -mb-1 cursor-pointer"
                 >
                   Reviews
-                </a>
+                </Link>
               </li>
               {/* Add more navigation links here */}
             </ul>

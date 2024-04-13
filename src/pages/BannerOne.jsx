@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function BannerOne() {
   const texts = [
@@ -20,7 +20,7 @@ export default function BannerOne() {
 
   return (
     <div>
-      <div className="px-8 py-2 dark:bg-[#606c38] dark:text-white">
+      <div className="px-8 py-2 dark:bg-blue-950 dark:text-white">
         <div className="flex items-center justify-center py-2"> {/* Center align horizontally */}
           <div className="text-center"> {/* Center align text */}
             <h1>{texts[currentTextIndex]}</h1>

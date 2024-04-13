@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function SecondBanner() {
   return (
-    <section className="py-2 dark:bg-gray-100 dark:text-gray-800">
+    <section className="py-2 mxl:x-1 dark:bg-gray-100 dark:text-gray-800">
       <h1 className="text-center text-3xl mb-5 font-bold">
         Top Collection List
       </h1>

@@ -14,6 +14,8 @@ import Premiumbooks from "./pages/Books/Viewsbook/Premiumbooks";
 
 import Dashboard from "./components/Dashboard/Dashboard"
 import Dashboards from "./components/Dashboard/Admins/Dashboards";
+import Membership from "./pages/Membership";
+import Testimonial from "./pages/Testimonial";
 
 
 
@@ -37,7 +39,8 @@ export default function App() {
             <Route path="/premiumbooks" element={<Premiumbooks/>}/>
 
 
-
+            <Route path="/membership" element={<Membership/>}/>
+            <Route path="/testimonial" element={<Testimonial/>}/>
 
             <Route path="/register/login/dashboard" element={<Dashboard/>}/>
 

@@ -15,6 +15,7 @@ export default function General() {
         </Link>
       </div>
       <div className="container mt-10">
+<<<<<<< HEAD
         <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5 -mr-32">
           <div
             data-aos="fade-up"
@@ -26,6 +27,13 @@ export default function General() {
               alt=""
               className="h-[220px] w-[150px] object-cover  rounded-md"
             />
+=======
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
+
+
+          <div data-aos="fade-up" data-aos-delay="0" className="space-y-3 aos-init aos-animate ">
+            <img src="https://images-us.bookshop.org/ingram/9780062963505.jpg?height=500&v=v2-314a5e611f125ea779c71f17189016c2" alt="" className="h-[220px] w-[150px] object-cover rounded-md" />
+>>>>>>> 633272d9880169d0221c6d780173906b291a55c4
             <div>
               <h3 className="font-semibold">
                 The Adventures of Amina Al-Sirafi, by Shannon Chakraborty

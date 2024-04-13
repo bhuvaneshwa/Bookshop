@@ -13,6 +13,7 @@ import Login from "./Login";
 import Premiumbooks from "./pages/Books/Viewsbook/Premiumbooks";
 
 import Dashboard from "./components/Dashboard/Dashboard"
+import Dashboards from "./components/Dashboard/Admins/Dashboards";
 
 
 
@@ -39,6 +40,8 @@ export default function App() {
 
 
             <Route path="/register/login/dashboard" element={<Dashboard/>}/>
+
+            <Route path="/register/login/dashboard" element={<Dashboards/>}/>
 
           
           </Route>

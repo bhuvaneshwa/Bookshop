@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 export default function BannerSecond() {
   return (
     <div className="bg-gray-50 dark:bg-gray-200 dark:text-gray-200">
-      <div className="container mx-auto px- py-4 flex justify-between items-center">
+      <div className="container mx-auto px-5 py-4 flex justify-between items-center">
         <ul className="flex space-x-4 text-sm">
           <li>
             <Link

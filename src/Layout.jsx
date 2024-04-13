@@ -95,7 +95,7 @@ export default function Layout() {
               </li>
               <li className="flex">
                 <a
-                  rel="noopener noreferrer"
+                
                   className="flex items-center px-4 -mb-1"
                 >
                   Membership
@@ -103,8 +103,8 @@ export default function Layout() {
               </li>
               <li className="flex" href="#reviews">
                 <a
-                  rel="noopener noreferrer"
-                  className="flex items-center px-4 -mb-1"
+                 
+                  className="flex items-center px-4 -mb-1 cursor-pointer"
                 >
                   Reviews
                 </a>

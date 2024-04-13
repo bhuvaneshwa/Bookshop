@@ -7,3 +7,19 @@ body{
     background-color: white;
     color: black;
 }
+
+
+.card-container {
+    background-image: url('/Books.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-content {
+     cursor: pointer;
+     color: white;
+    
+    padding: 20px; 
+    border-radius: 10px; 
+  }
+  

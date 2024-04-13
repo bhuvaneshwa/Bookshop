@@ -10,8 +10,9 @@ import Tracking from "./pages/Tracking";
 import Blog from "./pages/Blog";
 import RegisterForm from "./RegisterForm";
 import Login from "./Login";
+import Premiumbooks from "./pages/Books/Viewsbook/Premiumbooks";
 
-
+import Dashboard from "./components/Dashboard/Dashboard"
 
 
 
@@ -31,6 +32,13 @@ export default function App() {
             <Route  path="/register" element={<RegisterForm/>}/>
             {/* <Route  path="/loginsignup" element={<LoginSignup/>}/> */}
             <Route  path="/register/login" element={<Login/>}/>
+
+            <Route path="/premiumbooks" element={<Premiumbooks/>}/>
+
+
+
+
+            <Route path="/register/login/dashboard" element={<Dashboard/>}/>
 
           
           </Route>

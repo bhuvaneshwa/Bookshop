@@ -25,40 +25,21 @@ const HomeSection = () => {
   return (
     <div>
       <section
-        className="pt-20 bg-cover bg-gray-200 bg-center h-[30rem] relative transition duration-1000"
-        style={{
-          backgroundImage: backgrounds[backgroundIndex],
-          transitionProperty: "background-image",
-        }}
-        id="home"
-      >
-        <div className="container mx-auto flex flex-col md:flex-row items-center h-full">
-          <div className="w-full md:w-1/2 p-5">
-            <div className="content flex flex-col justify-center items-center bg-slate-50 p-5 rounded-xl">
-              <h3 className="text-4xl font-bold text-black">
-                Books Feed Your Soulsss
-              </h3>
-              <p className="text-base text-gray-700 leading-relaxed my-4 text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                ipsam et maxime libero inventore placeat illo, illum deserunt
-                rem aperiam fuga repudiandae distinctio quo odio sit
-                perspiciatis vero laudantium minima.
-              </p>
-              <a
-                href="#populer"
-                className="btn bg-[#606c38] text-white py-2 px-6 rounded-full text-lg font-semibold transition duration-300 hover:bg-secondaryColor hover:text-white"
-              >
-                Shop Now !
-              </a>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2">
-            {/* Add content for the second half of the hero section here */}
-            {/* For example, you can add an image */}
-            <img src="/blog3.jpg" alt="Hero Image" className="w-full " />
-          </div>
-        </div>
-      </section>
+  className="pt-20 bg-cover h-screen relative transition duration-1000"
+  style={{
+    backgroundImage: `url(${backgrounds[backgroundIndex]})`, // Use url() to specify the background image
+    backgroundSize: 'cover', // Ensure the image covers the entire section
+    backgroundPosition: 'center', // Center the image within the section
+    transitionProperty: "background-image",
+  }}
+  id="home"
+>
+  <div className="text-white text-5xl pl-28 flex items-center h-[15rem]">
+    {/* Text content */}
+    <h1>Welcome</h1>
+  </div>
+</section>
+
 
       <SecondBanner />
 

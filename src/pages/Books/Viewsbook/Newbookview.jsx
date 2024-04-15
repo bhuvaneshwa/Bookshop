@@ -1,5 +1,4 @@
 
-// Ecommerce Card Component
 const EcommerceCard = ({ image, title, price, description }) => {
   return (
     <div className="max-w-xs rounded overflow-hidden shadow-lg bg-white">
@@ -15,28 +14,30 @@ const EcommerceCard = ({ image, title, price, description }) => {
   );
 };
 
-// Premiumbooks Component
-export default function Premiumbooks() {
+
+
+
+export default function Newbookview() {
   // Sample data for demonstration
   const products = [
     {
       id: 1,
       title: "Product 1",
-      image: "https://via.placeholder.com/150",
+      image: "https://via.placeholder.com/150", // Image URL
       price: "$19.99",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       id: 2,
       title: "Product 2",
-      image: "https://via.placeholder.com/150",
+      image: "https://via.placeholder.com/150", // Image URL
       price: "$24.99",
       description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
     },
     {
       id: 3,
       title: "Product 3",
-      image: "https://via.placeholder.com/150",
+      image: "https://via.placeholder.com/150", // Image URL
       price: "$29.99",
       description: "Fusce at nisi eget dolor rhoncus tincidunt id in libero.",
     },
@@ -50,8 +51,8 @@ export default function Premiumbooks() {
   ];
 
   return (
-    <div className="container  mx-5 py-8">
-      <h2 className="text-3xl font-bold mb-8">Premium Books</h2>
+    <div className="container mx-5 py-8">
+      <h2 className="text-3xl font-bold mb-8">New Books</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {/* Render each product card */}
         {products.map((product) => (

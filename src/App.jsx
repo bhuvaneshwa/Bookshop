@@ -10,14 +10,18 @@ import Tracking from "./pages/Tracking";
 import Blog from "./pages/Blog";
 import RegisterForm from "./RegisterForm";
 import Login from "./Login";
-import Premiumbooks from "./pages/Books/Viewsbook/Premiumbooks";
+import Faq from "./pages/Faq";
 
-import Dashboard from "./components/Dashboard/Dashboard"
-import Dashboards from "./components/Dashboard/Admins/Dashboards";
+
+
+
 import Membership from "./pages/Membership";
 import Testimonial from "./pages/Testimonial";
+import Newbookview from "./pages/Books/Viewsbook/Newbookview";
+import Premiumbooks from "./pages/Books/Viewsbook/Premiumbooks";
 
-
+import Generalview from "./pages/Books/Viewsbook/Generalview";
+import Dashboard from "./components/Dashboard/Admins/Dashboard";
 
 export default function App() {
   return (
@@ -28,30 +32,30 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomeSection />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact/>} />
-            <Route path="/track" element={<Tracking/>} />
-            <Route path="/blog" element={<Blog/>} />
-            <Route  path="/register" element={<RegisterForm/>}/>
-            {/* <Route  path="/loginsignup" element={<LoginSignup/>}/> */}
-            <Route  path="/register/login" element={<Login/>}/>
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="track" element={<Tracking />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="register" element={<RegisterForm />} />
+            
+            <Route path="register/login" element={<Login />} />
 
-            <Route path="/premiumbooks" element={<Premiumbooks/>}/>
+            <Route path="faq" element={<Faq/>} />
+
+            <Route path="register/login/dashboard" element={<Dashboard/>} />
+
+           
+            <Route path="membership" element={<Membership/>} />
+            <Route path="testimonial" element={<Testimonial/>} />
+
+            <Route path="newbookview" element={<Newbookview/>} />
+            <Route path="premiumbooks" element={<Premiumbooks/>} />
+            <Route path="generalview" element={<Generalview/>} />
 
 
-            <Route path="/membership" element={<Membership/>}/>
-            <Route path="/testimonial" element={<Testimonial/>}/>
-
-            <Route path="/register/login/dashboard" element={<Dashboard/>}/>
-
-            <Route path="/register/login/dashboard" element={<Dashboards/>}/>
-
-          
           </Route>
         </Routes>
-
-
-        <Footer/>
+        <Footer />
       </div>
     </Router>
   );

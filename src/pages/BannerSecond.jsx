@@ -54,6 +54,7 @@ export default function BannerSecond() {
           <FaInstagram className="text-pink-600 cursor-pointer hover:scale-110" />
         </div>
       </div>
+      <hr className=' border-blue-400'></hr>
     </div>
   );
 }

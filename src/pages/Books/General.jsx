@@ -5,7 +5,7 @@ export default function General() {
     <div className="mt-14 mb-12">
       <div className="flex flex-row justify-between">
         <h1 className="text-3xl font-bold aos-init aos-animate mt-10">General books</h1>
-        <Link to="/premiumbooks"> <button className="text-center mt-10 cursor-pointer  bg-primary text-white py-1 px-5 rounded-md">
+        <Link to="/generalview"> <button className="text-center mt-10 cursor-pointer  bg-primary text-white py-1 px-5 rounded-md">
           View All Books
         </button></Link>
       </div>
